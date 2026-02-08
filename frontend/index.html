@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IssueMaster - Assistente Inteligente de Chamados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-home">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center ps-lg-5" href="#page-top">
+                <i class="bi bi-robot" style="color: #667eea; font-size: 1.5rem;"></i>
+                <span class="ms-2">IssueMaster</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto pe-lg-5">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#app">Ferramenta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead Header -->
+    <header class="masthead">
+        <div class="container-fluid">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-6">
+                    <div class="mb-5 mb-lg-0 text-center text-lg-start ps-lg-5">
+                        <h1 class="display-3 fw-bold mb-4">
+                            Crie chamados perfeitos com IA
+                        </h1>
+                        <p class="lead fw-normal mb-5">
+                            IssueMaster é seu assistente inteligente que analisa sua descrição de problema e a transforma em um chamado bem estruturado. Economia de tempo, qualidade garantida.
+                        </p>
+                        <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#app" class="btn btn-light btn-lg fw-bold px-5">
+                                <i class="bi bi-rocket-takeoff me-2"></i> Começar Agora
+                            </a>
+                            <a href="#features" class="btn btn-outline-light btn-lg fw-bold px-5">
+                                <i class="bi bi-info-circle me-2"></i> Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="masthead-graphic d-none d-md-block">
+                        <i class="bi bi-chat-left-quote"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <!-- About Section -->
+    <section id="sobre" class="py-5">
+        <div class="container-fluid px-lg-5">
+            <div class="text-center mb-4">
+                <h2 class="display-6 fw-bold">Como Funciona</h2>
+                <p class="lead text-muted">Três passos simples para transformar sua descrição em um chamado claro e acionável.</p>
+            </div>
+
+            <div class="row gx-4 gy-4 justify-content-center">
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon mb-3" style="font-size:3.25rem; color:var(--theme-color);">
+                        <i class="bi bi-1-circle"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2">Descreva o Problema</h5>
+                    <p class="text-muted">Forneça detalhes como: mensagens de erro, quando começou e como impacta seu trabalho.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon mb-3" style="font-size:3.25rem; color:var(--theme-color);">
+                        <i class="bi bi-2-circle"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2">Nossa IA Analisa</h5>
+                    <p class="text-muted">A IA avalia clareza e completude e destaca pontos que faltam na descrição.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon mb-3" style="font-size:3.25rem; color:var(--theme-color);">
+                        <i class="bi bi-3-circle"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2">Receba Feedback</h5>
+                    <p class="text-muted">Receba nota, feedback e sugestões práticas para melhorar seu chamado antes de enviar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App IssueMaster Section -->
+    <section id="app" class="py-5 app-section-gradient">
+        <div class="container-fluid py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Faça o teste!</h2>
+                <p class="lead">Avalie a qualidade da sua descrição de chamado com nossa IA</p>
+            </div>
+            <div class="row h-100">
+                <!-- Coluna Esquerda - Entrada -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 ps-lg-5">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-4">
+                                <h3 class="fw-bold text-primary mb-2">
+                                    Descreva seu Problema
+                                </h3>
+                                <p class="text-muted mb-0">Inclua detalhes como: o que aconteceu, mensagens de erro, quando começou e impacto no seu trabalho.</p>
+                            </div>
+
+                            <div class="mb-3 flex-grow-1">
+                                <label for="descricaoChamado" class="form-label fw-semibold">Descrição do Chamado</label>
+                                <textarea 
+                                    class="form-control" 
+                                    id="descricaoChamado" 
+                                    rows="8" 
+                                    placeholder="Ex: O Outlook apresenta erro ao tentar enviar e-mails para domínios externos. A mensagem de erro é '550 Access Denied'. Isso começou hoje às 09:00..."
+                                ></textarea>
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <button id="btnAvaliar" class="btn btn-primary" onclick="avaliarChamado()">
+                                    <i class="bi bi-magic"></i> Avaliar Descrição
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita - Resultado -->
+                <div class="col-lg-6 col-md-12 pe-lg-5">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="fw-bold text-primary mb-4">
+                                <i class="bi bi-sparkles"></i> Análise da IA
+                            </h3>
+
+                            <div id="loadingArea" class="text-center flex-grow-1 d-none d-flex flex-column justify-content-center">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Carregando...</span>
+                                </div>
+                                <p class="mt-2 text-muted">A Inteligência Artificial está analisando seu relato...</p>
+                            </div>
+
+                            <div id="resultadoArea" class="flex-grow-1 d-none d-flex flex-column">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <h5 class="mb-0">Qualidade do Chamado</h5>
+                                    <span id="badgeNota" class="badge rounded-pill bg-secondary fs-6">Nota: --</span>
+                                </div>
+
+                                <div class="progress mb-4" style="height: 20px;">
+                                    <div id="barraProgresso" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                                </div>
+
+                                <div class="alert alert-light border border-secondary mb-3" role="alert">
+                                    <h6 class="alert-heading mb-2"><i class="bi bi-chat-left-text"></i> Feedback da IA</h6>
+                                    <p id="textoFeedback" class="mb-0 small">...</p>
+                                </div>
+
+                                <div class="card bg-light border-0">
+                                    <div class="card-body">
+                                        <h6 class="fw-bold mb-3"><i class="bi bi-lightbulb"></i> Sugestões de Melhoria & Testes</h6>
+                                        <ul id="listaSugestoes" class="mb-0 ps-3 small">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="emptyResultArea" class="flex-grow-1 d-flex flex-column justify-content-center align-items-center text-muted">
+                                <i class="bi bi-inbox" style="font-size: 3rem; opacity: 0.3;"></i>
+                                <p class="mt-2 small">Avalie a descrição para ver a análise aqui</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container-fluid px-lg-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Por que usar IssueMaster?</h2>
+                <p class="lead text-muted">Simplificamos o processo de criação de chamados com tecnologia de IA</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-robot"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Análise com IA</h4>
+                        <p class="text-muted">Nossa inteligência artificial analisa sua descrição e fornece feedback instantâneo sobre a qualidade.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Sugestões Inteligentes</h4>
+                        <p class="text-muted">Receba recomendações personalizadas para melhorar sua descrição e cobrir todos os pontos importantes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-lightning"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Rápido e Fácil</h4>
+                        <p class="text-muted">Sem complicações. Digite seu problema, clique em avaliar e veja os resultados em segundos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-check-circle"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Chamados Melhores</h4>
+                        <p class="text-muted">Crie chamados bem estruturados que facilitam o entendimento do problema pelos responsáveis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contato" class="cta-section">
+        <div class="container-fluid">
+            <h2>Pronto para criar chamados melhores?</h2>
+            <p class="lead mb-5">Comece agora mesmo a usar IssueMaster e veja a diferença.</p>
+            <a href="#app" class="btn btn-cta btn-lg fw-bold">
+                <i class="bi bi-lightning-charge me-2"></i> Acessar IssueMaster
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container-fluid">
+            <p class="mb-0">&copy; 2026 IssueMaster MVP - Projeto Acadêmico</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

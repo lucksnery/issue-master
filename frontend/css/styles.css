@@ -1,0 +1,185 @@
+body {
+    background-color: #f8f9fa; /* Fundo cinza claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea {
+    resize: none; /* Impede o usuário de quebrar o layout redimensionando */
+}
+
+.card {
+    border-radius: 12px; /* Bordas mais arredondadas */
+}
+
+/* Navbar com sombra */
+.navbar-shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    height: 40px;
+    max-width: 50px;
+    object-fit: contain;
+}
+
+/* Transição suave para aparecer o resultado */
+#resultadoArea {
+    animation: fadeIn 0.8s;
+}
+
+#loadingArea {
+    animation: fadeIn 0.8s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cores específicas para as notas (classes que usaremos no JS) */
+.score-low { background-color: #dc3545 !important; } /* Vermelho */
+.score-med { background-color: #ffc107 !important; color: #000; } /* Amarelo */
+.score-high { background-color: #198754 !important; } /* Verde */
+
+/* Layout de 2 colunas responsivo */
+@media (max-width: 991px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Garante altura mínima para as cards ocuparem bem o espaço */
+.card.h-100 {
+    min-height: 500px;
+}
+
+/* Estilos para a landing page (moved from home.html) */
+.masthead {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.masthead h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.masthead .lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+/* Masthead decorative graphic (placed on the right side of the hero) */
+.masthead-graphic {
+    font-size: 9.5rem;
+    color: #ffffff;
+    opacity: 0.18;
+    line-height: 1;
+}
+
+/* Theme variable + overrides to use the same purple for text and primary buttons */
+:root {
+    --theme-color: #667eea;
+}
+
+.text-primary {
+    color: var(--theme-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #5563d6 !important;
+    border-color: #5563d6 !important;
+}
+
+@media (max-width: 991px) {
+    .masthead-graphic {
+        display: none; /* hide on smaller screens */
+    }
+}
+
+.features-section {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-cta {
+    background-color: white;
+    color: #667eea;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.btn-cta:hover {
+    background-color: #f0f0f0;
+    color: #667eea;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.navbar-home {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-home .navbar-brand {
+    color: #667eea;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-home .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-home .nav-link:hover {
+    color: #667eea !important;
+}
+
+.app-section-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 5rem 0;
+}
+
+.app-section-gradient h2 {
+    color: white;
+}
+
+.app-section-gradient > div > div > p {
+    color: white;
+}
