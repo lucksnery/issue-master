@@ -148,7 +148,7 @@ uvicorn main:app --reload
 ```
 
 ### 6️⃣ Executar o Frontend
-Execute o arquivo index.html que está dentro da pasta frontend usando algum navegador.
+Execute o arquivo index.html que está dentro da pasta raiz do projeto usando algum navegador de sua preferencia.
 ```bash
-frontend/index.html
+issue-master/index.html
 ```
